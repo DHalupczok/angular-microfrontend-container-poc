@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
 This project serves as a container for webpack module federation approach.
 This project was inspired by this article: https://www.angulararchitects.io/en/blog/the-microfrontend-revolution-part-2-module-federation-with-angular/
-For this application to work in external micro frontend module (https://github.com/DHalupczok/user-management-microfrontend-poc) should be served properly 
+For this application to work in external micro frontend module (https://github.com/DHalupczok/user-management-microfrontend-poc) should be served properly. Serve both applications to checkout the microfrontend possibilities.  
 
 ## Development server
 
