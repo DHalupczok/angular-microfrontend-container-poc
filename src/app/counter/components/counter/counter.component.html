@@ -1,0 +1,8 @@
+<div class="outer-container">
+  <div class="inner-container">
+    <p>Counter value: {{counter$ | async}}</p>
+    <button (click)="increment()">Increment counter</button>
+    <input type="number" [(ngModel)]="newCounter">
+    <button (click)="saveCounter()">Save new counter</button>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+div.outer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #054A91;
+  div.inner-container {
+    flex-direction: column;
+    justify-content: center;
+    color: #DBE4EE;
+
+  }
+}
