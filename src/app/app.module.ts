@@ -7,12 +7,14 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import {RouteReuseStrategy} from "@angular/router";
 import {CustomRouteReuseStrategy} from "./customRouteReuseStrategy";
 import { ExampleComponent } from './components/example/example.component';
+import { UserManagementMfeComponent } from './pages/user-management-mfe/user-management-mfe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    ExampleComponent
+    ExampleComponent,
+    UserManagementMfeComponent
   ],
   imports: [
     BrowserModule,
