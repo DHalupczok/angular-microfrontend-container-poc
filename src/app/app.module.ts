@@ -8,13 +8,15 @@ import {RouteReuseStrategy} from "@angular/router";
 import {CustomRouteReuseStrategy} from "./customRouteReuseStrategy";
 import { ExampleComponent } from './components/example/example.component';
 import { UserManagementMfeComponent } from './pages/user-management-mfe/user-management-mfe.component';
+import { AppRoutingComponent } from './app-routing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     ExampleComponent,
-    UserManagementMfeComponent
+    UserManagementMfeComponent,
+    AppRoutingComponent
   ],
   imports: [
     BrowserModule,

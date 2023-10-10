@@ -2,11 +2,11 @@ import {ActivatedRouteSnapshot, DetachedRouteHandle, RouteReuseStrategy,} from '
 
 export class CustomRouteReuseStrategy implements RouteReuseStrategy {
   private storedRoutes = new Map<string, DetachedRouteHandle>();
-  private detachPages: string[] = ["",'counter', 'todo', 'user-management'];
+  private detachPages: string[] = ["", 'counter', 'todo', 'user-management'];
 
   shouldDetach(route: ActivatedRouteSnapshot): boolean {
     const path = route.routeConfig?.path;
-    console.log("Path", path)
+    console.log("Goes out", path)
     if (path !==undefined) {
       return this.detachPages.includes(path);
     }
@@ -22,6 +22,7 @@ export class CustomRouteReuseStrategy implements RouteReuseStrategy {
 
   shouldAttach(route: ActivatedRouteSnapshot): boolean {
     const path = route.routeConfig?.path;
+    console.warn("Goes in", path);
     if (path !==undefined) {
       return (
         !!route.routeConfig && !!this.storedRoutes.get(path)
