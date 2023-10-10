@@ -3,7 +3,8 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 module.exports = withModuleFederationPlugin({
 
   remotes: {
-    "user-management-microfrontend-poc": "http://localhost:4201/remoteEntry.js",
+    // "user-management-microfrontend-poc": "http://localhost:4201/remoteEntry.js",
+    // "pets-management-microfrontend-poc": "http://localhost:4202/remoteEntry.js",
   },
 
   shared: {
